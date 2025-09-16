@@ -1,6 +1,24 @@
 'use client'
+import { gsap } from "gsap";
+// import {rocket} from "../public/rocket.png";
 import Center from "../components/center";
+import { useEffect } from "react";
 const Home=()=>{
+      
+  const launch=()=>{
+    gsap.to(".circle", {
+      duration: 1,
+      delay: 1,
+      y: -900,
+      // rotation: 360,
+      scale: 0,
+      // repeat: -1,
+      // yoyo: true,
+      ease: "linear",
+      stagger: 1,
+    });
+  }
+  
     return(
         <>
        <div className="h-screen bg-[url('/bgblack.jpg')] bg-cover bg-center">
@@ -19,7 +37,8 @@ const Home=()=>{
         <div>
             <Center/>
         </div>
-        <div>
+        {/* gsap.to(".box", {duration: 2, x:300, rotation:360, scale:0.5}); */}
+        <div onClick={launch} className="circle   bg-[url('/rocket.png')] bg-cover bg-center active:scale-95 cursor-pointer  bg-white w-20 h-20 absolute bottom-0 m-10 rounded-full">
             
         </div>
       </div>
