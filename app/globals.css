@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
 
 body {
   font-family: "Ubuntu", sans-serif;
@@ -11,3 +13,4 @@ body {
 /* .skillpage{
   height: 100%;
 } */
+
