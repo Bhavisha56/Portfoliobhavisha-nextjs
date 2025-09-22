@@ -41,20 +41,20 @@ const Home = () => {
         ref={containerRef}
         className="flex w-[600vw] h-screen overflow-x-hidden overflow-y-hidden scrollbar-hide"
       >
-        <section className="panel w-screen h-screen flex flex-col items-center justify-center bg-[url('/bgblack.jpg')] bg-cover bg-center">
+        <section className="panel w-screen h-screen flex flex-col items-center justify-center bg-[url('/ai.jpg')] bg-cover bg-center">
           <Center />
         </section>
 
         {/* AboutSection */}
-        <section className="panel bg-[url('/bgback.jpg')] bg-cover bg-center w-screen h-screen flex items-center justify-center ">
-          <div className="text-xl text-center text-lime-400 w-96 relative  right-52 h-56 font-bold">
+        <section className="panel bg-opacity-100 bg-[url('/ai.jpg')] bg-cover bg-center w-screen h-screen flex items-center justify-center ">
+          <div className="text-xl text-center text-white  font-sans w-96 relative  right-52 h-56 font-bold">
             <p className="aboutlines">I am a MERN Stack Developer and a B.Tech student in Electronics and
             Communication Engineering at NSUT (2021–2025). I have hands-on
             experience in building full-stack applications using React, Node.js,
             Express, and MongoDB. I enjoy solving problems, designing scalable
             applications, and exploring the intersection of software.</p>
           </div>
-          <div className="bg-[url('/bgback.jpg')] bg-cover bg-center  right-5 w-56 h-56 rounded-full border-4 border-lime-400 relative left-52">
+          <div className="bg-[url('/ai.jpg')]  bg-cover bg-center  right-5 w-56 h-56 rounded-full border-4 border-lime-400 relative left-52">
              
           </div>
         </section>
