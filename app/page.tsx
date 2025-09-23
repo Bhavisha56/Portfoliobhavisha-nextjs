@@ -46,16 +46,16 @@ const Home = () => {
         </section>
 
         {/* AboutSection */}
-        <section className="panel bg-opacity-100 bg-[url('/ai.jpg')] bg-cover bg-center w-screen h-screen flex items-center justify-center ">
-          <div className="text-xl text-center text-white  font-sans w-96 relative  right-52 h-56 font-bold">
+        <section className="panel2 panel  bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center ">
+          <div className="text-2xl text-center text-white  font-mono  w-96 relative  right-52 h-56 font-bold">
             <p className="aboutlines">I am a MERN Stack Developer and a B.Tech student in Electronics and
             Communication Engineering at NSUT (2021–2025). I have hands-on
             experience in building full-stack applications using React, Node.js,
             Express, and MongoDB. I enjoy solving problems, designing scalable
             applications, and exploring the intersection of software.</p>
           </div>
-          <div className="bg-[url('/ai.jpg')]  bg-cover bg-center  right-5 w-56 h-56 rounded-full border-4 border-lime-400 relative left-52">
-             
+          <div className=" bg-cover bg-center mt-40 border-4 border-lime-400 rounded-2xl shadow-lg shadow-black">
+            <img className=" w-56 " src="/profo.png" alt="" />
           </div>
         </section>
 
