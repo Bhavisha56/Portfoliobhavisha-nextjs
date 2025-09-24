@@ -7,12 +7,15 @@ import { useRouter } from "next/navigation";
 import Navbar from "../components/navbar";
 import Center from "../components/center";
 import Cardskill from "../components/cardskill";
+import Footer from "../components/footer"
+import ProjectCard from "../components/project"
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
-
+  
+  
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -29,6 +32,9 @@ const Home = () => {
         end: () => "+=" + container.offsetWidth,
       },
     });
+
+    // Stagger animation for aboutlines
+   
   }, []);
 
   return (
@@ -48,7 +54,7 @@ const Home = () => {
         {/* AboutSection */}
         <section className="panel  bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center ">
           <div className="text-2xl text-center text-white  font-mono  w-96 relative  right-52 h-56 font-bold">
-            <p className="aboutlines">I am a MERN Stack Developer and a B.Tech student in Electronics and
+            <p className="aboutlines ">I am a MERN Stack Developer and a B.Tech student in Electronics and
             Communication Engineering at NSUT (2021–2025). I have hands-on
             experience in building full-stack applications using React, Node.js,
             Express, and MongoDB. I enjoy solving problems, designing scalable
@@ -72,14 +78,20 @@ const Home = () => {
         </section>
 
         {/* Projects Section */}
-        <section className="panel w-screen h-screen flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-800">
-          <h1 className="text-6xl font-bold">🚀 Projects</h1>
+        <section className="panel bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center ">
+          <div className="grid grid-cols-4">
+
+          <ProjectCard/>
+          </div>
         </section>
 
         {/* Contact Section */}
         <section className="panel w-screen h-screen flex items-center justify-center bg-gradient-to-r from-pink-600 to-red-700">
           <h1 className="text-6xl font-bold">📬 Contact</h1>
         </section>
+      </div>
+      <div className=" left-0 w-full z-50 bg-transparent">
+      <Footer/>
       </div>
     </div>
   );
