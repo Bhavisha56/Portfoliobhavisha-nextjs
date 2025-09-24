@@ -9,12 +9,14 @@ import Center from "../components/center";
 import Cardskill from "../components/cardskill";
 import Footer from "../components/footer"
 import ProjectCard from "../components/project"
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   
+
   
   useEffect(() => {
     const container = containerRef.current;
@@ -33,8 +35,6 @@ const Home = () => {
       },
     });
 
-    // Stagger animation for aboutlines
-   
   }, []);
 
   return (
@@ -79,8 +79,7 @@ const Home = () => {
 
         {/* Projects Section */}
         <section className="panel bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center ">
-          <div className="grid grid-cols-4">
-
+          <div >
           <ProjectCard/>
           </div>
         </section>
