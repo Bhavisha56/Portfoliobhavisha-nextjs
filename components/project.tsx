@@ -8,39 +8,30 @@ const projects = [
     img: "/ecomm.png",
     title: "Buy It",
     desc: "An eCommerce platform built with MERN stack.",
+    link:"https://buyitecommerce.onrender.com/"
   },
   {
     img: "/blogger.png",
     title: "Blogger",
     desc: "A blogging platform to share your thoughts.",
+    link:"https://blog-sample-bhavishya.onrender.com/"
   },
   {
     img: "/hotel.png",
     title: "Hotel World",
     desc: "Hotel booking system with user-friendly design.",
+    link:"https://67c3fef405e2b5bf81df13f1--meek-bunny-90e164.netlify.app/"
   },
   {
     img: "/chess.png",
     title: "Chess",
     desc: "A multiplayer chess game built using HTML,Css,Js.",
+    link:"https://chess-web-zero-zero.vercel.app/"
   },
 ]
 
 export default function ProjectCard() {
-//   useEffect(() => {
-//     gsap.fromTo(
-//       ".pcard",
-//       { y: 80, opacity: 0, scale: 0.9 },
-//       {
-//         y: 0,
-//         opacity: 1,
-//         scale: 1,
-//         duration: 1.2,
-//         stagger: 0.3,
-//         ease: "power3.out",
-//       }
-//     )
-//   }, [])
+
 
   return (
     <div className="w-full px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -60,9 +51,11 @@ export default function ProjectCard() {
             </div>
           </div>
           <div className="p-4 text-center">
-            <h3 className="text-xl font-semibold text-white group-hover:text-lime-400 transition-colors duration-300">
+            <a href={proj.link}>
+              <h3 className="text-xl cursor-pointer font-semibold text-white group-hover:text-lime-400 transition-colors duration-300">
               {proj.title}
             </h3>
+            </a>
           </div>
         </div>
       ))}

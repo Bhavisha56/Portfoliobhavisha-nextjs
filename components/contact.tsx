@@ -4,9 +4,9 @@
 // useState
 export default function contact(){
 
-   async function handleSubmit(event) {
+   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
           event.preventDefault();
-          const formData = new FormData(event.target);
+          const formData = new FormData(event.target as HTMLFormElement);
 
           formData.append("access_key", "f5b93ac3-ef38-43e3-aece-e9d45a056e75");
 
@@ -23,7 +23,7 @@ export default function contact(){
           });
           const result = await response.json();
           if (result.success) {
-              event.target.reset();
+              (event.target as HTMLFormElement).reset();
           }
         toast('Message Send', {
        position: "bottom-center",

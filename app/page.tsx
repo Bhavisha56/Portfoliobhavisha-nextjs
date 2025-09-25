@@ -53,7 +53,7 @@ const Home = () => {
         </section>
 
         {/* AboutSection */}
-        <section className="panel  bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center ">
+        <section id="about" className="panel  bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center ">
           <div className="text-2xl text-center text-white  font-mono  w-96 relative  right-52 h-56 font-bold">
             <p className="aboutlines ">I am a MERN Stack Developer and a B.Tech student in Electronics and
             Communication Engineering at NSUT (2021–2025). I have hands-on
@@ -61,8 +61,8 @@ const Home = () => {
             Express, and MongoDB. I enjoy solving problems, designing scalable
             applications, and exploring the intersection of software.</p>
             <div className="flex justify-center mt-4 gap-4 ">
-            <button className="bg-lime-400 active:bg-lime-300 cursor-pointer transition-all ease-in-out  text-black p-2 rounded-3xl">Resume</button>
-            <button className="hover:bg-zinc-900 active:bg-zinc-800 transition-all ease-in-out delay-50 duration-300 cursor-pointer p-2 rounded-2xl text-white ">Github</button>
+            <a href="/bhavisha_2021UEC2580.pdf"><button className="bg-lime-400 active:bg-lime-300 cursor-pointer transition-all ease-in-out  text-black p-2 rounded-3xl">Resume</button></a>
+            <a href="https://github.com/Bhavisha56"><button className="hover:bg-zinc-900 active:bg-zinc-800 transition-all ease-in-out delay-50 duration-300 cursor-pointer p-2 rounded-2xl text-white ">Github</button></a>
             </div>
           </div>
           <div className=" bg-cover bg-center mt-40 border-4 border-lime-400 rounded-2xl shadow-lg shadow-black">
@@ -71,7 +71,7 @@ const Home = () => {
         </section>
 
         {/* SkillsSection */}
-        <section className="panel bg-[url('/Gemini.png')] w-screen h-screen flex flex-col items-center justify-center ">
+        <section  className="panel bg-[url('/Gemini.png')] w-screen h-screen flex flex-col items-center justify-center ">
          <div className="">
           <Cardskill/>
 
@@ -79,14 +79,14 @@ const Home = () => {
         </section>
 
         {/* Projects Section */}
-        <section className="panel bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center ">
+        <section id="project" className="panel bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center ">
           <div >
           <ProjectCard/>
           </div>
         </section>
 
         {/* Contact Section */}
-        <section className="panel bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center bg-gradient-to-r from-pink-600 to-red-700">
+        <section id="contact" className="panel bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center bg-gradient-to-r from-pink-600 to-red-700">
            <Contactform/>
         </section>
       </div>
