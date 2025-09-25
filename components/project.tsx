@@ -1,7 +1,7 @@
 "use client"
 
-import { useEffect } from "react"
-import gsap from "gsap"
+// import { useEffect } from "react"
+// import gsap from "gsap"
 
 const projects = [
   {
@@ -22,7 +22,7 @@ const projects = [
   {
     img: "/chess.png",
     title: "Chess",
-    desc: "A multiplayer chess game built in React.",
+    desc: "A multiplayer chess game built using HTML,Css,Js.",
   },
 ]
 

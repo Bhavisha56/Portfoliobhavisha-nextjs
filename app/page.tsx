@@ -2,20 +2,20 @@
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useRef} from "react";
 import Navbar from "../components/navbar";
 import Center from "../components/center";
 import Cardskill from "../components/cardskill";
 import Footer from "../components/footer"
 import ProjectCard from "../components/project"
+import Contactform from "../components/contact";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const router = useRouter();
   
+  const containerRef = useRef<HTMLDivElement>(null);
+ 
 
   
   useEffect(() => {
@@ -26,6 +26,7 @@ const Home = () => {
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
       ease: "none",
+      smooth:true,
       scrollTrigger: {
         trigger: container,
         pin: true,
@@ -85,8 +86,8 @@ const Home = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="panel w-screen h-screen flex items-center justify-center bg-gradient-to-r from-pink-600 to-red-700">
-          <h1 className="text-6xl font-bold">📬 Contact</h1>
+        <section className="panel bg-[url('/Gemini.png')] bg-opacity--20  bg-cover bg-center w-screen h-screen flex items-center justify-center bg-gradient-to-r from-pink-600 to-red-700">
+           <Contactform/>
         </section>
       </div>
       <div className=" left-0 w-full z-50 bg-transparent">
