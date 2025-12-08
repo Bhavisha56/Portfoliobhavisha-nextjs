@@ -61,7 +61,7 @@ const Home = () => {
             Express, and MongoDB. I enjoy solving problems, designing scalable
             applications, and exploring the intersection of software.</p>
             <div className="flex justify-center mt-4 gap-4 ">
-            <a href="/bhavisha_2021UEC2580.pdf"><button className="bg-lime-400 active:bg-lime-300 cursor-pointer transition-all ease-in-out  text-black p-2 rounded-3xl">Resume</button></a>
+            <a href="/bhavishaResumeTech.pdf"><button className="bg-lime-400 active:bg-lime-300 cursor-pointer transition-all ease-in-out  text-black p-2 rounded-3xl">Resume</button></a>
             <a href="https://github.com/Bhavisha56"><button className="hover:bg-zinc-900 active:bg-zinc-800 transition-all ease-in-out delay-50 duration-300 cursor-pointer p-2 rounded-2xl text-white ">Github</button></a>
             </div>
           </div>
